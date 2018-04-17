@@ -60,12 +60,13 @@ $.widget('dotp.form', {
 	__setForm: function() {
 		var $this = this;
 
-		switch($this.options.type) {
-			case "demo": {
-				$this.options.form = require('./forms/demo.js');
-				break;
-			}
-		}
+		// No longer needed, form is provided by expand row
+		// switch($this.options.type) {
+		// 	case "demo": {
+		// 		$this.options.form = require('./forms/demo.js');
+		// 		break;
+		// 	}
+		// }
 
 		// If fields null, set obj structure from form so save has all required properties
 		if ($this.options.data.fields == null) {

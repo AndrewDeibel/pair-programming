@@ -3,6 +3,7 @@ $.widget('dotp.table', {
 	options: {
 		url: null, // ajax url for data
 		expandUrl: null, // ajax url for row expand data
+		expandForm: null, // json form for expand row
 		btnSave: true,
 		data: null, // non ajax data
 		columns: null, // list of table columns
@@ -156,6 +157,7 @@ $.widget('dotp.table', {
 						$form.form({
 							type: $this.options.type,
 							data: detailsData,
+							form: $this.options.form,
 						});
 
 						if ($this.options.btnSave != null) {
