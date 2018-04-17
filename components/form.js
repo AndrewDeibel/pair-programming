@@ -92,13 +92,13 @@ $.widget('dotp.form', {
 	// Render
 	_render: function() {
 		var $this = this;
-		if ($this.forms.tabs) {
+		if ($this.options.form.tabs) {
 			$this.__renderTabs();
 		}
 		else {
 			// TODO: need to render form similar to render tabs
 			// then pass in as template for fields to be appended
-			$this.__renderFields($this.form.fields, );
+			$this.__renderFields($this.options.form.fields, );
 		}
 	},
 	
