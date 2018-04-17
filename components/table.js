@@ -157,7 +157,7 @@ $.widget('dotp.table', {
 						$form.form({
 							type: $this.options.type,
 							data: detailsData,
-							form: $this.options.form,
+							form: $this.options.expandForm,
 						});
 
 						if ($this.options.btnSave != null) {
